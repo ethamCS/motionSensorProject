@@ -1,0 +1,13 @@
+Team Composition and Idea Proposal
+
+~Team composition
+	-Greyson Sequino
+	-Sam Bonafe
+	-Ethan Myers
+
+~Idea Proposal
+	-Our objective to to create a motion activiated alarm with network connectivity. To reach this objective we plan
+ to use a Raspberry Pi 2 model b, an infrared motion detector, and a buzzer alarm. Ubuntu will be installed on the Pi
+ and the Gpiozero library will be used to interface with the motion detector and buzzer. We made these design choices
+ because our larger goal was to design a single component of an in home security system. We already have the Pi and the
+ sensors and cables will arrive from Amazon by Febuary 26th. The total for the sensors and cables was $18.04.
