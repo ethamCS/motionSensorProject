@@ -13,8 +13,8 @@ print("Socket is listening")
 
 while True:
     c, addr = s.accept()
-    print(f"Got connection from {addr}")
-    msg = "Hello client!\n"
+    print(f"Alert from {addr}")
+    msg = "Alert Recieved\n"
     byt = msg.encode()
     c.send(byt)
     c.close()
