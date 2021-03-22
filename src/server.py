@@ -5,8 +5,8 @@ print("Socket created successfully")
 
 port = 12345
 
-s.bind(('', port))
-print(f"Socket binded to {port}")
+s.bind((socket.gethostname(), port))
+print(f"Socket bound to {port}")
 
 s.listen(5)
 print("Socket is listening")
