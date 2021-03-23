@@ -4,7 +4,7 @@ s = socket.socket()
 
 port = 12345
 
-s.connect(('10.0.0.3', port))
+s.connect(('10.0.0.2', port))
 
 while True:
     byt = s.recv(4096)
