@@ -1,13 +1,17 @@
 import socket
 
-socket = socket.socket()
+s = socket.socket()
 
 port = 12345
 
-socket.connect(('10.0.0.3', port))
+s.connect(('10.0.0.3', port))
 
-byt = socket.recv(4096)
-msg = byt.decode()
-print(msg)
+while True:
+    byt = s.recv(4096)
+    msg = byt.decode()
+    last_msg = ""
+    if (last_msg != msg):
+        print(msg)
+        last_msg = msg
 
-socket.close
+s.close()
