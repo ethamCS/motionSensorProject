@@ -1,0 +1,10 @@
+~ Raspberry pi login info
+    username: pi
+    passwd: raspberry
+~ Network
+    Wifi: pi
+    login: admin
+    passwd: raspberry
+
+~ MotionSensor gpiozero section = 13.1.3
+~ Buzzer gpiozero section = 14.1.4
