@@ -5,13 +5,13 @@ class Network:
         self.port = port
         s = socket.socket()
         print("Socket created successfully")
-        s.bind((socket.gethostname(), port))
-        print("Socket bound to port {}".format(port))
+        s.bind(('', port))
+        print(f"Socket bound to port {port}")
         s.listen(5)
         print("Socket is listening")
         c, addr = s.accept()
         self.c = c
-        print("Connection established with %s" % addr)
+        print(f"Connection established with {addr}")
 
     def alert_server(self, msg):
         byt = msg.encode()
