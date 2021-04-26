@@ -6,12 +6,12 @@ class Network:
         s = socket.socket()
         print("Socket created successfully")
         s.bind(('', port))
-        print(f"Socket bound to port {port}")
+        print("Socket bound to port {}".format(port))
         s.listen(5)
         print("Socket is listening")
         c, addr = s.accept()
         self.c = c
-        print(f"Connection established with {addr}")
+        print("Connection established with {}".format(addr))
 
     def alert_server(self, msg):
         byt = msg.encode()
