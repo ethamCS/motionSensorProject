@@ -1,4 +1,4 @@
 from gpiozero import Buzzer
 
-bz = Buzzer(14)
+bz = Buzzer(23)
 bz.beep()
