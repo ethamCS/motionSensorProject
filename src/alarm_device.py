@@ -12,8 +12,9 @@ bz = Buzzer(23)
 # MotionSensor setup
 ms = MotionSensor(17)
 i = 0
-while i < 1000000000:
+while i < 1000000:
     i = i + 1
+print("Done warming up")
 
 while True:
     ms.wait_for_motion()
