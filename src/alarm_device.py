@@ -7,7 +7,7 @@ import time
 server = Network(12345)
 
 # Buzzer setup
-bz = Buzzer(14)
+bz = Buzzer(23)
 
 # MotionSensor setup
 ms = MotionSensor(17)
