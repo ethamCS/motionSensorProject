@@ -12,7 +12,7 @@ bz = Buzzer(23)
 # MotionSensor setup
 ms = MotionSensor(17)
 i = 0
-while i < 100000000:
+while i < 50000000:
     i = i + 1
 print("Done warming up")
 
