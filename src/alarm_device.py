@@ -11,8 +11,9 @@ bz = Buzzer(23)
 
 # MotionSensor setup
 ms = MotionSensor(17)
-for i in range(1000000):
-    print()
+i = 0
+while i < 1000000000:
+    i = i + 1
 
 while True:
     ms.wait_for_motion()
