@@ -15,7 +15,7 @@ ms = MotionSensor(17)
 while True:
     ms.wait_for_motion()
     print("Motion detected!")
-    server.alert("Motion detected!")
+    server.alert_server("Motion detected!")
     bz.on()
     time.sleep(3)
     bz.off()
