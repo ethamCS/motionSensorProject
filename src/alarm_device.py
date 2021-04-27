@@ -18,7 +18,7 @@ try:
             print("Motion detected!")
             server.alert_server("Motion detected!")
             bz.on()
-            time.sleep(3)
+            time.sleep(5)
             bz.off()
 except KeyboardInterrupt:
     print("Quitting")
