@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO
+from gpiozero import MotionSensor
 from gpiozero import Buzzer
 from classes.network import Network
 import time
@@ -10,14 +10,11 @@ server = Network(12345)
 bz = Buzzer(17)
 
 # MotionSensor setup
-GPIO.setmode(GPIO.BCM)
-MS_PIN = 7
-
-GPIO.setup(MS_PIN, GPIO.IN)
+ms = MotionSensor(7)
 
 try:
     while True:
-        if GPIO.input(MS_PIN):
+        if ms.motion_detected:
             print("Motion detected!")
             server.alert_server("Motion detected!")
             bz.on()
