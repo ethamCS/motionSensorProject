@@ -12,6 +12,7 @@ bz = Buzzer(17)
 # MotionSensor setup
 ms = MotionSensor(7)
 
+try:
 while True:
     if ms.motion_detected:
         print("Motion detected!")
@@ -19,3 +20,6 @@ while True:
         bz.on()
         time.sleep(3)
         bz.off()
+except KeyboardInterrupt:
+    print("Quitting")
+    server.close_connection()
