@@ -1,16 +1,13 @@
-import RPi.GPIO as GPIO
+from gpiozero import MotionSensor
 import time
 
-GPIO.setmode(GPIO.BCM)
-PIR_PIN = 7
-
-GPIO.setup(PIR_PIN, GPIO.IN)
+ms = MotionSensor(7)
 
 print("Setup complete...")
 print("Starting script")
 
 while True:
-    if GPIO.input(PIR_PIN):
+    if ms.motion_detected:
         print("MOTION DETECTED")
     else:
         print("NO MOTION")
