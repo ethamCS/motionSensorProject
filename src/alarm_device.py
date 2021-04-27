@@ -10,7 +10,7 @@ server = Network(12345)
 bz = Buzzer(23)
 
 # MotionSensor setup
-ms = MotionSensor(17)
+ms = MotionSensor(7)
 
 while True:
     if ms.motion_detected:
