@@ -13,7 +13,7 @@ bz = Buzzer(17)
 ms = MotionSensor(7)
 
 print("Warming up")
-i = 100000000
+i = 10000000
 while i > 0:
     i = i - 1
 print("Done warming up")
