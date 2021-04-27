@@ -1,4 +1,4 @@
-from RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 from gpiozero import Buzzer
 from classes.network import Network
 import time
