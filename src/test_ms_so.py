@@ -1,7 +1,7 @@
 from gpiozero import MotionSensor
 import time
 
-ms = MotionSensor(7)
+ms = MotionSensor(7, threshold=.99)
 
 print("Setup complete...")
 print("Starting script")
