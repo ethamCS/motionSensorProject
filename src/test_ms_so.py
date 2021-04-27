@@ -11,4 +11,4 @@ while True:
         print("MOTION DETECTED")
     else:
         print("NO MOTION")
-    time.sleep(1)
+    time.sleep(5)
