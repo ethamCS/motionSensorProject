@@ -13,9 +13,9 @@ bz = Buzzer(17)
 ms = MotionSensor(7)
 
 try:
-while True:
-    if ms.motion_detected:
-        print("Motion detected!")
+    while True:
+        if ms.motion_detected:
+            print("Motion detected!")
         server.alert_server("Motion detected!")
         bz.on()
         time.sleep(3)
